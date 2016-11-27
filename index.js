@@ -34,10 +34,10 @@ module.exports = {
       var destSpriteDir = 'images/sprites';
       var spritePath    = '/emojify/dist/images/sprites/';
 
-      target.import(target.bowerDirectory + spritePath + 'emojify.png', {
+      target.import(target.bowerDirectory + spritePath + 'emojify-emoticons.png', {
         destDir: destSpriteDir
       });
-      target.import(target.bowerDirectory + spritePath + 'emojify@2x.png', {
+      target.import(target.bowerDirectory + spritePath + 'emojify-emoticons@2x.png', {
         destDir: destSpriteDir
       });
     }
@@ -82,7 +82,7 @@ module.exports = {
     var emojiDataURIPath = path.join(this.app.bowerDirectory,
           'emojify/dist/css/data-uri/emojify.css'),
         emojiSpritesPath = path.join(this.app.bowerDirectory,
-          'emojify/dist/css/sprites/emojify.css');
+          'emojify/dist/css/sprites/emojify-emoticons.css');
 
     if (_emojiConfig.mode === 'data-uri') {
       this.app.import(emojiDataURIPath);
